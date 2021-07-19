@@ -1,0 +1,19 @@
+.header{
+    margin-top: 96px;
+    box-sizing: border-box;
+    background-image: $hd-bg;
+    background-size: cover;
+    background-repeat: no-repeat !important;
+    height: 90vh;
+}
+
+@media screen and (max-width:320px){
+    .header{
+        height: 40vh;
+    }
+}
+@media screen and (max-width:600px){
+    .header{
+        height: 40vh;
+    }
+}

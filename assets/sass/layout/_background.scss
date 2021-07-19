@@ -1,0 +1,42 @@
+.page-content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.page-left{
+    order:1;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.page-right{
+    order: 2;
+    width: 50%;
+}
+
+@media screen and (max-width:320px){
+    .page-left{
+        order:2;
+        width: 100%;
+    }
+    
+    .page-right{
+        order: 1;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:600px){
+    .page-left{
+        order:2;
+        width: 100%;
+    }
+    
+    .page-right{
+        order: 1;
+        width: 100%;
+    }
+}

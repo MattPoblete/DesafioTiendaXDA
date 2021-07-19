@@ -1,0 +1,63 @@
+.nav{
+    position: fixed;
+    top: 0px;
+    display: flex;
+    width: 100%;
+    height: 96px;
+    background-color: $white;
+    color: $smoky-black;
+    font-weight: $bold;
+        input{
+            display: none;
+        }
+        div{
+            display: flex;
+        }
+        .nav-icon{
+                .nav-logo{
+                    display: flex;
+                    color:$isabelline;
+                    background-color: $smoky-black;
+                    margin: 0;
+                    padding: 2rem 1.5rem;
+                    vertical-align: middle;
+
+                }
+        }
+
+        .nav__ul{
+            display: flex;
+            vertical-align: middle;
+            margin: auto;
+            right: 5%;
+                a{
+                    padding: 1rem;
+                }
+            
+        }
+        .nav-content{
+            display: flex;
+            position: relative;
+            margin-left: auto;
+            margin-right: 5%;
+        }
+}
+
+@media screen and (max-width:320px){
+    .nav{
+        width: 100vw;
+        input{
+            display: inline-block;
+        }
+        .nav-content{
+            display: none;
+        }
+        input[type="checkbox"]:checked ~ .nav-content{
+            display: flex;
+            .nav__ul{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+}

@@ -1,0 +1,417 @@
+@import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT:wght@400;700&family=Raleway:wght@400;700&display=swap");
+body {
+  margin: 0px;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+li {
+  text-decoration: none;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #0c0910;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  background-color: #ececec;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: "Old Standard TT", serif;
+  font-weight: 700;
+}
+
+.page-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 100%;
+}
+
+.page-left {
+  order: 1;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.page-right {
+  order: 2;
+  width: 50%;
+}
+
+@media screen and (max-width: 320px) {
+  .page-left {
+    order: 2;
+    width: 100%;
+  }
+
+  .page-right {
+    order: 1;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .page-left {
+    order: 2;
+    width: 100%;
+  }
+
+  .page-right {
+    order: 1;
+    width: 100%;
+  }
+}
+.nav {
+  position: fixed;
+  top: 0px;
+  display: flex;
+  width: 100%;
+  height: 96px;
+  background-color: #fff;
+  color: #0c0910;
+  font-weight: 700;
+}
+.nav input {
+  display: none;
+}
+.nav div {
+  display: flex;
+}
+.nav .nav-icon .nav-logo {
+  display: flex;
+  color: #ececec;
+  background-color: #0c0910;
+  margin: 0;
+  padding: 2rem 1.5rem;
+  vertical-align: middle;
+}
+.nav .nav__ul {
+  display: flex;
+  vertical-align: middle;
+  margin: auto;
+  right: 5%;
+}
+.nav .nav__ul a {
+  padding: 1rem;
+}
+.nav .nav-content {
+  display: flex;
+  position: relative;
+  margin-left: auto;
+  margin-right: 5%;
+}
+
+@media screen and (max-width: 320px) {
+  .nav {
+    width: 100vw;
+  }
+  .nav input {
+    display: inline-block;
+  }
+  .nav .nav-content {
+    display: none;
+  }
+  .nav input[type=checkbox]:checked ~ .nav-content {
+    display: flex;
+  }
+  .nav input[type=checkbox]:checked ~ .nav-content .nav__ul {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.header {
+  margin-top: 96px;
+  box-sizing: border-box;
+  background-image: url("../img/imagen1.png");
+  background-size: cover;
+  background-repeat: no-repeat !important;
+  height: 90vh;
+}
+
+@media screen and (max-width: 320px) {
+  .header {
+    height: 40vh;
+  }
+}
+@media screen and (max-width: 600px) {
+  .header {
+    height: 40vh;
+  }
+}
+.section {
+  box-sizing: border-box;
+  text-align: left;
+  margin-top: 96px;
+  height: 80%;
+  float: left;
+  background-color: #fff;
+}
+.section .section__div {
+  display: inline-block;
+  padding: 4rem;
+}
+.section .section__div .section__h1 {
+  font-size: 50px;
+}
+.section .section__div .section__p {
+  display: inline-block;
+  font-weight: 400 !important;
+  color: #646266;
+}
+
+@media screen and (max-width: 320px) {
+  .section {
+    margin-top: 0px;
+  }
+  .section .section__div {
+    display: inline-block;
+    padding: 0rem;
+    margin-top: 1rem !important;
+    margin: 2rem;
+  }
+  .section .section__div .section__h1 {
+    font-size: 30px;
+    margin-bottom: 0px;
+  }
+  .section .section__div .section__p {
+    display: inline-block;
+    font-weight: 400 !important;
+    font-size: 14px;
+    line-height: 25px;
+    color: #646266;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+}
+@media screen and (min-width: 321px) and (max-width: 600px) {
+  .section {
+    margin-top: 0px;
+  }
+  .section .section__div {
+    display: inline-block;
+    padding: 0rem;
+    margin-top: 0.5rem !important;
+    margin-left: 4rem;
+    margin-bottom: 4rem;
+    width: 65%;
+  }
+  .section .section__div .section__h1 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+  .section .section__div .section__p {
+    display: inline-block;
+    font-weight: 400 !important;
+    font-size: 14px;
+    line-height: 25px;
+    color: #646266;
+  }
+}
+.footer {
+  display: block;
+  width: 100%;
+  box-sizing: content-box;
+  background-color: #0c0910;
+  color: #fff;
+}
+
+.footer__div {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  order: 1;
+  margin: 0px;
+  padding-left: 3rem;
+  padding-bottom: 3rem;
+  padding-top: 2rem;
+}
+.footer-content h4 {
+  margin: 0rem;
+  font-size: 30px;
+  font-weight: 700;
+}
+.footer-content h5 {
+  margin-bottom: 0rem;
+  font-size: 18px;
+  font-weight: 200;
+}
+
+.suscribir {
+  display: flex;
+  box-sizing: border-box;
+  order: 2;
+  background-color: #fff;
+  align-self: stretch;
+}
+
+.suscribir__texto {
+  margin: 0.5rem;
+  writing-mode: vertical-lr;
+  color: #0c0910;
+  font-size: 20px;
+  align-self: center;
+}
+
+@media screen and (max-width: 320px) {
+  .footer-content {
+    padding-left: 2rem;
+    padding-bottom: 2rem;
+    padding-top: 1.5rem;
+  }
+  .footer-content h4 {
+    margin: 0rem;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .footer-content h5 {
+    margin-bottom: 0rem;
+    margin-top: 0.5rem;
+    font-size: 16px;
+    font-weight: 200;
+  }
+}
+@media screen and (min-width: 321px) and (max-width: 600px) {
+  .footer-content {
+    padding-left: 4rem;
+    padding-bottom: 4rem;
+    padding-top: 1.5rem;
+  }
+  .footer-content h4 {
+    margin: 0rem;
+    font-size: 30px;
+  }
+  .footer-content h5 {
+    margin-top: 0.5rem;
+    font-size: 14px;
+    font-weight: 200;
+  }
+}
+.section__button {
+  text-decoration: none;
+  padding: 0.875rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #0c0910;
+  background-color: #fff;
+  border-radius: 2px;
+  border: 1.5px solid #0c0910;
+  cursor: pointer;
+}
+.section__button:hover {
+  color: #0c0910;
+  background-color: #ffffff;
+  border: 1.5px solid #ececec;
+}
+.section__button:focus {
+  color: #ececec;
+  background-color: #ffffff;
+  border: 1.5px solid #ececec;
+}
+
+@media screen and (max-width: 320px) {
+  .section__button {
+    text-decoration: none;
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0.5rem 0.5rem;
+    color: #0c0910;
+    background-color: #fff;
+    border-radius: 2px;
+    border: 1.5px solid #0c0910;
+    cursor: pointer;
+  }
+  .section__button:hover {
+    color: #0c0910;
+    background-color: #ffffff;
+    border: 1.5px solid #ececec;
+  }
+  .section__button:focus {
+    color: #ececec;
+    background-color: #ffffff;
+    border: 1.5px solid #ececec;
+  }
+}
+@media screen and (min-width: 321px) and (max-width: 600px) {
+  .section__button {
+    text-decoration: none;
+    padding: 0.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #0c0910;
+    background-color: #fff;
+    border-radius: 2px;
+    border: 1.5px solid #0c0910;
+    cursor: pointer;
+  }
+  .section__button:hover {
+    color: #0c0910;
+    background-color: #ffffff;
+    border: 1.5px solid #ececec;
+  }
+  .section__button:focus {
+    color: #ececec;
+    background-color: #ffffff;
+    border: 1.5px solid #ececec;
+  }
+}
+.footer__input {
+  margin-top: 1rem;
+  padding: 0.6rem;
+  padding-left: 0.8rem !important;
+  padding-right: 2rem !important;
+  font-family: "Raleway", sans-serif;
+  width: 100%;
+  font-size: 14px;
+  font-weight: bold;
+  color: #0c0910;
+  background-color: #fff;
+  border-radius: 2px;
+  border: 1.5px solid #0c0910;
+}
+
+@media screen and (max-width: 320px) {
+  .footer__input {
+    padding-right: 0.7rem !important;
+    width: 107% !important;
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 0.2rem;
+    padding-left: 0.4rem !important;
+  }
+}
+@media screen and (min-width: 321px) and (max-width: 600px) {
+  .footer__input {
+    padding-right: 0.7rem !important;
+    width: 215%;
+    font-size: 14px;
+    margin-top: 0.2rem;
+    padding: 0.3rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,37 @@
+.footer__input{
+    margin-top: 1rem;
+    padding: 0.6rem;
+    padding-left: 0.8rem !important;
+    padding-right: 2rem !important;
+    font-family: $raleway;
+    width: 100%;
+    font-size: $small;
+    font-weight: bold;
+    color: $smoky-black;
+    background-color: $white;
+    border-radius: 2px;
+    border: 1.5px solid $smoky-black;
+
+}
+
+@media screen and (max-width:320px)  {
+    .footer__input{
+        padding-right: 0.7rem !important;
+        width: 107% !important;
+        font-size: $x-small;
+        font-weight: $regular;
+        margin-top: 0.2rem;
+        padding-left: 0.4rem !important;
+    }
+}
+
+
+@media screen and (min-width:321px) and (max-width:600px) {
+    .footer__input{
+        padding-right: 0.7rem !important;
+        width: 215%;
+        font-size: $small;
+        margin-top: 0.2rem;
+        padding: 0.3rem;
+    }
+}

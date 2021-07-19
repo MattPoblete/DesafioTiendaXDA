@@ -1,0 +1,4 @@
+@mixin fontsize-converter($poperty, $unit, $target, $context){
+    $result: ($target / $context);
+    #{$poperty}: #{$result + $unit};
+}
